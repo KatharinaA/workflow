@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Fordelsappen",
+    "slug": "fordelsappen",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#00529B"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "no.fordelsappen",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Fordelsappen bruker din posisjon for å vise deg fordeler i nærheten.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Fordelsappen bruker din posisjon for å varsle deg om fordeler i nærheten.",
+        "NSLocationAlwaysUsageDescription": "Fordelsappen bruker din posisjon i bakgrunnen for å varsle deg om fordeler i nærheten."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#00529B"
+      },
+      "package": "no.fordelsappen",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Fordelsappen bruker din posisjon for å vise deg fordeler i nærheten.",
+          "locationAlwaysPermission": "Fordelsappen bruker din posisjon i bakgrunnen for å varsle deg om fordeler i nærheten.",
+          "locationWhenInUsePermission": "Fordelsappen bruker din posisjon for å vise deg fordeler i nærheten."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#00529B"
+        }
+      ]
+    ]
+  }
+}
